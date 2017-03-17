@@ -1,0 +1,2 @@
+# hexoSetting
+setting for hexo
