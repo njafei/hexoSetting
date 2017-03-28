@@ -7,7 +7,7 @@ title: njafei's blog
 subtitle: 
 description:
 author: njafei
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -35,7 +35,7 @@ external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: false
+relative_link: true
 future: true
 highlight:
   enable: true
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: apollo
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
