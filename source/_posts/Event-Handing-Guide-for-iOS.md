@@ -1,7 +1,10 @@
 ---
 title: Apple文档翻译之Event-Handing-Guide-for-iOS
 date: 2017-03-27 15:38:29
-tags: 文档翻译
+tags: 
+    - Apple文档
+    - 基础知识
+categories: 文档翻译
 ---
 
 # About Events in iOS

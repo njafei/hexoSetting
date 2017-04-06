@@ -6,10 +6,12 @@
 {% block page_class %}page-post-detail page-calendar{% endblock %}
 
 {% block content %}
+
   <section id="schedule">
     <ul id="event-list">
     </ul>
   </section>
+
 {% endblock %}
 
 {% block sidebar %}

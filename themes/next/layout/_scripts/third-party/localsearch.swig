@@ -11,9 +11,7 @@
     // monitor main search box;
 
     function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
+      $("body").append('<div class="local-search-pop-overlay">').css('overflow', 'hidden');
       $('.popup').toggle();
     }
     // search function;

@@ -1,7 +1,7 @@
 ---
 title: github pages + hexo 原理探究
 date: 2017-03-18 21:07:15
-tags: 闲来研究
+categories: 闲来研究
 ---
 
 缘起

@@ -37,10 +37,10 @@ seo: false
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
-  home: /
-  archives: /archives
-  tags: /tags
-  #categories: /categories
+  home: https://njafei.github.io/
+  archives: https://njafei.github.io/archives
+  tags: https://njafei.github.io/tags/
+  categories: https://njafei.github.io/categories
   #about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404.html

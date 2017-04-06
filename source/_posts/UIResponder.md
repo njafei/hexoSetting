@@ -2,6 +2,8 @@
 title: Apple文档翻译之UIResponder
 date: 2017-03-21 15:20:54
 tags: 
+    - Apple文档
+    - 基础知识
 categories: 文档翻译
 ---
 
