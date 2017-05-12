@@ -21,8 +21,8 @@ $ git config --global user.email gitaccount@example.com
 
 ```
 $ cd gitFolder
-$ git config --global user.name gitaccount
-$ git config --global user.email gitaccount@example.com
+$ git config user.name gitaccount
+$ git config user.email gitaccount@example.com
 ```
 
 这样，如果本地有多个git user 或者多个项目的话，使用起来就比较方便了。
