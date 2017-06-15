@@ -219,8 +219,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 200
 
 # Post meta display settings
 post_meta:
@@ -390,10 +390,10 @@ vkontakte_api:
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
-leancloud_visitors:
-  enable: true
-  app_id: Q78bvJBlGiiYOXyTpNNiCLB5-gzGzoHsz
-  app_key: tLbgyLH7fpOj1myx7wfYx3kf
+# leancloud_visitors:
+#   enable: true
+#   app_id: Q78bvJBlGiiYOXyTpNNiCLB5-gzGzoHsz
+#   app_key: tLbgyLH7fpOj1myx7wfYx3kf
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/

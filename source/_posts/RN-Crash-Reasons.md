@@ -3,6 +3,7 @@ title: RN 最容易crash的代码用法及应对措施（持续更新）
 date: 2017-04-17 10:37:55
 tags: React-Native
 categories: React-Native
+
 ---
 
 ## 变量保护
@@ -115,6 +116,29 @@ export default class Hello extends Component {
 我今天看了我们项目的代码，发现几乎没有人做保护，代码copy的现象，真的是令人发指，可能很多人都没仔细看过官方的文档。。。
 
 
+
+## RN0.43 Text组件bug
+最近公司升级了RN的版本，从0.39升级到了0.43，这里出现了一个比较严重的bug。github上的issue地址：[https://github.com/facebook/react-native/issues/13080
+](https://github.com/facebook/react-native/issues/13080
+)
+
+具体来说，就是`android`上面的`Text`，string和int等数值混排会出现莫名的bug，无论Text是否加了点击事件，只要触摸int等数值的展示部分，就会崩溃，具体代码如下：
+
+```
+let num = 5;
+<Text>有{num}个赞</Text> //点击crash
+``` 
+
+如何补救呢？使用`.toString`:
+
+```
+let num = 5;
+<Text> 有{num.toString()}个赞</Text> //ok
+```
+
+看github上的记录，0.44已经修复，但是如果使用0.43的同学，千万要小心。
+
+更新于 2017-05-10
 
 
 
