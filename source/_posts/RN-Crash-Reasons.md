@@ -140,5 +140,41 @@ let num = 5;
 
 更新于 2017-05-10
 
+## 字符串作为判断条件 崩溃bug
 
+类似这样：
+
+```
+let test = {string: ''};
+return (
+    <View>
+        {test && test.string &&
+        <Text>{test.string}</Text>
+        }
+    </View>
+)
+```
+
+报错：
+
+```
+Error: RawText "" must be wrapped in an explicit <Text> component.  
+```
+
+原因未知，但是会崩溃
+
+保护措施：
+
+```
+let test = {string: ''};
+return (
+    <View>
+        {test && !!test.string &&
+        <Text>{test.string}</Text>
+        }
+    </View>
+)
+```
+
+具体的可以看下这篇文章：[Error RawText ** must be wrapped in an explicit component 问题解决](https://njafei.github.io/2017/06/14/stringToBoolError/)
 

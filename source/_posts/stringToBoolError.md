@@ -43,7 +43,7 @@ return (
 let test = {string: ''};
 return (
     <View>
-        {test && test.string &&
+        {test && !!test.string &&
         <Text>{test.string}</Text>
         }
     </View>
