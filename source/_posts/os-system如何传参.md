@@ -3,8 +3,8 @@ title: os.system如何传参
 date: 2017-05-26 11:21:12
 tags: [python]
 categories: python
----
 
+---
 今天写脚本的时候，正好希望在python脚本中调用另外一个python脚本，就使用了os.system来实现这个功能（当然，还有很多的办法，而且每种方法满足的需求不都一样，有兴趣的读者可以谷歌下）。
 
 但是我需要给这个调用里面传入一个参数，网上查了半天，感觉都不太清晰，就写了这篇，简单介绍下。
@@ -23,7 +23,6 @@ os.system("shell command argusFormat" % argus)
 param = 'I'm param'
 os.system("python haha.py %s" % (param))
 ```
-
 #### 多个参数
 
 ```
@@ -36,7 +35,6 @@ os.system("python haha.py %s %s" % (paramA,paramB))
 
 #### python格式化
 
-这里是参数的字符格式化，供大家参考
 
 ```
 %s    字符串 (采用str()的显示)
@@ -63,11 +61,12 @@ os.system("python haha.py %s %s" % (paramA,paramB))
 
 %F    浮点数，与上相同
 
-%g    指数(e)或浮点数 (根据显示长度)
+%g    指数(e)或浮点数 (根据显示长度)
 
 %G    指数(E)或浮点数 (根据显示长度)
-
 
 %%    字符"%"
 ```
 
+
+ 
